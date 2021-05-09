@@ -19,7 +19,7 @@ Project is created with:
 
 ## "My personal website" PDF Presentation
 To have a preview of the site you can also have a look at my PDF
-presentation file: "[Anthony Dei Medici - HTML e CSS.pdf](https://github.com/AnthonyDM-Dev/My_personal_website/Anthony Dei Medici - HTML e CSS.pdf)"
+presentation file: "[Anthony_Dei_Medici-HTML_e_CSS.pdf](https://github.com/AnthonyDM-Dev/My_personal_website/Anthony_Dei_Medici-HTML_e_CSS.pdf)"
 
 ## Contact Information
 Anthony Dei Medici - anthony.deimedici@gmail.com
