@@ -12,6 +12,9 @@ Project is created with:
 * Font Awesome
 * Google Fonts
 
+## Watch it on Git Hub Pages
+https://anthonydm-dev.github.io/My_personal_website/
+
 ## Installation
 * Just download the repository folder
 * Open mysite.html on your browser.
