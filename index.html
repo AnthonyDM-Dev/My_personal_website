@@ -4,23 +4,37 @@
     <meta charset="utf-8">
     <!-- Meta data for mobile optimization -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
-    <!-- CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" rel="stylesheet">
     <!-- Icons -->
-    <script defer src="js/all.js"></script>
+    <script src="https://kit.fontawesome.com/9a2c4fe4ba.js" crossorigin="anonymous"></script>
     <!-- My CSS -->
     <link href="style.css" rel="stylesheet">
-
+    <!-- Title & Favicon -->
     <title>Anthony Dei Medici - Blockchain Developer</title>
+    <link rel="shortcut icon" type="img/png" href="img/favicon.png"/>
   </head>
   <body>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style=z-index:9000;>
+      <div class="modal-dialog">
+        <div class="modal-content text-center">
+          <div class="modal-header" style="align-self: center;">
+            <h5 class="modal-title" id="exampleModalLabel"><!-- Text added in JS script below --></h5>
+          </div>
+          <div class="modal-body">
+            <!-- Text added in JS script below -->
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Nav bar -->
     <nav class="navbar navbar-expand-lg navbar-light w-100 sticky-top">
       <div class="container-fluid">
         <div class='container logocontainer' type='button' data-bs-target="#carouselExampleControls" data-bs-slide-to="0">
           <img src="img/brush-white-default.png" alt="" class='img-fluid'>
-          <p class='lead logophrase-1'>Anthony Dei Medici</p>
-          <p class='lead logophrase-2'>Blockchain Developer</p>
+          <h1 class='lead logophrase-1'>Anthony Dei Medici</h1>
+          <h1 class='lead logophrase-2'>Blockchain Developer</h1>
         </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -58,7 +72,7 @@
                 <img class='intro-bubble-image d-none d-md-block d-lg-block d-xl-block d-xxl-block' src='img/cute-bubble-revert.png'>
                 <img class='intro-bubble-image d-block d-sm-block d-md-none' src='img/bubble-cloud-vert.png'>
                 <div class='intro-text d-flex flex-column justify-content-center'>
-                    <h1 class='text-center intro-title-1'>Welcome to my site!</h1>
+                    <p class='text-center intro-title-1'>Welcome to my site!</p>
                     <p class='text-center intro-title-2'>Wanna know more about me?<br>Just click the buttons on top!</p>
                 </div>
               </div>
@@ -86,7 +100,7 @@
                 </div>
               </div>
               <div class='about-skills'>
-                <h1>Skills</h1>
+                <h2>Skills</h2>
                 <div class='about-skills-list'>
                   <div class='about-icon-container'>
                     <i class='about-icon fab fa-html5'></i>
@@ -143,7 +157,7 @@
             <div class='spacer' style='width: 100%; height: 20%;'>
             </div>
             <div class='portfolio-text'>
-              <h1>Portfolio</h1>
+              <h2>Portfolio</h2>
               <p>Have a look at my works!</p>
             </div>
             <div class='spacer' style='float: left; width: 20%; height: 1%;'>
@@ -172,13 +186,33 @@
         <!-- Contacts -->
         <div class="carousel-item" data-bs-interval="100000000000">
           <div class='screensize contacts position-relative'>
-            <div class='spacer' style='width: 100%; height: 30%;'>
+            <div class='spacer' style='width: 100%; height: 23%;'>
             </div>
-            <h1 class='contacts-text-1'>Contacts</h1>
+            <h2 class='contacts-text-1'>Contacts</h2>
             <div class='container-fluid contacts-icon-container'>
-              <p class='contacts-icon-1'><i class='fab fa-whatsapp'></i><em> +39 392 222 4168</em></p>
-              <p class='contacts-icon-1'><i class='far fa-envelope'></i><em> anthony.deimedici@gmail.com</em></p>
-              <div class='d-flex flex-row flex-wrap'>
+
+              <!-- Contacts Form -->
+              <form id="contact-form">
+                <div class="col-sm-10 col-xl-8 mb-3">
+                  <input name="contact_number" type="hidden">
+                    <p class="" style="font-size: 25px;">Send me an email</p>
+                  <input required name="user_name" type="text" class="form-control" id="FormControlInput" placeholder="Your name..." style="border: 0px; background-color: #efe7e7; color: #171717;">
+                </div>
+                <div class="col-sm-10 col-xl-8 mb-3">
+                  <input required name="user_email" type="email" class="form-control" id="FormControlInput" placeholder="your@email.com" style="border: 0px; background-color: #efe7e7; color: #171717;">
+                </div>
+                <div class="col-sm-10 col-xl-8 mb-3">
+                  <textarea required name="message" class="form-control" id="FormControlInput" rows="3" placeholder="Your message..." style="border: 0px; background-color: #efe7e7; color: #171717;"></textarea>
+                </div>
+                <div class="col-sm-10 col-xl-8 mb-3">
+                  <button data-bs-toggle="modal" data-bs-target="#exampleModal" type="submit" id="submitbutton" class="btn shadow mybtn" style="border: 0px; background-color: #efe7e7; color: #171717;">Send</button>
+                </div>
+              </form>
+
+              <div class="col-sm-10 col-xl-8 mb-3">
+                <p class="" style="font-size: 25px;">Or</p>
+              </div>
+              <div class='d-flex flex-row flex-wrap col-12'>
                 <a target='_blank' href='https://www.linkedin.com/in/anthony-dm-dev/'>
                   <p class='contacts-icon-2'><i class='fab fa-linkedin'></i></p>
                 </a>
@@ -201,7 +235,63 @@
     </div>
 
     <!-- jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <!-- JS for EmailJS CDN -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <!-- JS for EmailJS Init -->
+    <script type="text/javascript">
+      (function() {
+          // https://dashboard.emailjs.com/admin/integration
+          emailjs.init('user_yKMo45T83jtJ7cBx7TFk0');
+      })();
+    </script>
+    <!-- JS for EmailJS Data Get + My JS -->
+    <script type="text/javascript">
+    // My JS Script
+    let modalTitle = document.querySelector("h5[class='modal-title']");
+    let modalBody = document.querySelector("div[class='modal-body']");
+    function ModalTextSuccess() {
+      modalTitle.innerHTML = 'Email sent!';
+      modalBody.innerHTML = "Thank you for contacting me!</br>I'll answer soon as I can! =)";
+    }
+    function ModalTextFail() {
+      modalTitle.innerHTML = 'Email not sent!';
+      modalBody.innerHTML = 'Something went wrong! Please try again in few seconds.';
+    }
+    let inputs = document.querySelectorAll('#FormControlInput');
+    let btnSubmit = document.querySelector('#submitbutton');
+    btnSubmit.addEventListener('click', function() {
+      modalTitle.innerHTML = 'Wait a second...';
+      modalBody.innerHTML = "...I am sending your email...";
+      counter = 0;
+      inputs.forEach(item => {
+        if (item.value != '') {
+          counter++;
+        }
+      });
+      if (counter < 3) {
+        ModalTextFail()
+      };
+    })
+    // JS for EmailJS Data Get
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('service_vqzfuay', 'contact_form', this)
+                    .then(function() {
+                        ModalTextSuccess(); // My JS function
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        ModalTextFail(); // My JS function
+                        console.log('FAILED...', error);
+                    }
+                  );
+            });
+        }
+    </script>
 
   </body>
 </html>
