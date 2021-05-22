@@ -21,7 +21,7 @@ body {
   background-position: center;
   font-family: 'Source Serif Pro', serif;
 }
-h1 {
+h1, h2 {
   font-family: 'DM Serif Text', serif;
   font-weight: 600;
 }
@@ -35,12 +35,17 @@ p em,
   font-weight: 600;
   font-style: italic;
 }
+label {
+  font-family: 'Source Serif Pro', serif;
+  font-weight: 600;
+  font-size: 25px;
+}
 /* 02. NAVBAR */
 .navbar {
   background-color: none;
   padding: 0 40px;
   position: absolute;
-  z-index: 1100;
+  z-index: 1200;
 }
 .navbar button {
   background-color: #efe7e7;
@@ -52,8 +57,9 @@ p em,
   width: 400px;
   height: auto;
   margin-left: 0;
+  z-index: 1100;
 }
-.logocontainer p {
+.logocontainer h1 {
   font-family: 'Rock Salt', cursive;
   font-weight: 400;
 }
@@ -113,6 +119,8 @@ p em,
   left: 13%;
 }
 .intro-title-1 {
+  font-family: 'DM Serif Text', serif;
+  font-weight: 600;
   font-size: 3.5em;
   letter-spacing: 1px;
 }
@@ -155,7 +163,7 @@ p em,
   flex-direction: column;
   align-items: center;
 }
-.about-skills h1 {
+.about-skills h2 {
   font-size: 6rem;
 }
 .about-skills-list {
@@ -188,7 +196,7 @@ p em,
 .portfolio-text {
   text-align: center;
 }
-.portfolio-text h1 {
+.portfolio-text h2 {
   font-size: 6em;
 }
 .portfolio-text p {
@@ -218,10 +226,11 @@ p em,
 .contacts-text-1 {
   padding-left: 15%;
   font-size: 6em;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 .contacts-icon-container {
   padding-left: 15%;
+  line-height: normal;
 }
 .contacts-icon-container a {
   color: black;
@@ -235,7 +244,7 @@ p em,
 .contacts-icon-2 {
   padding-right: 40px;
   font-size: 4.5em;
-  margin-top: 30px;
+  margin-top: 0px;
 }
 /* DA FARE:
 - FAI IL DOWNLOAD DEL CSS, JS DI BOOTSTRAP E FONT AWESOME PERCHE', NON SO PERCHE',
@@ -285,7 +294,7 @@ NON MI CARICA NULLA SU UN ALTRO PC.
     padding-top: 5px;
     font-size: 4em;
   }
-  .portfolio-text h1 {
+  .portfolio-text h2 {
     font-size: 6em;
   }
   .portfolio-text p {
@@ -332,7 +341,7 @@ NON MI CARICA NULLA SU UN ALTRO PC.
   .about-card {
     max-width: 47%;
   }
-  .about-skills h1 {
+  .about-skills h2 {
     font-size: 4.5em;
   }
   .about-icon-container {
@@ -420,7 +429,7 @@ NON MI CARICA NULLA SU UN ALTRO PC.
     width: auto;
     max-width: none;
   }
-  .about-skills h1 {
+  .about-skills h2 {
     font-size: 4em;
   }
   .about-icon-container {
@@ -503,10 +512,10 @@ NON MI CARICA NULLA SU UN ALTRO PC.
     width: 100%;
     height: auto;
   }
-  .about-skills h1 {
+  .about-skills h2 {
     font-size: 3em;
   }
-  .portfolio-text h1 {
+  .portfolio-text h2 {
     font-size: 3.5em;
   }
   .portfolio-text p {
